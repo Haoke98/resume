@@ -34,8 +34,8 @@
 
   // 布局位置
   .basic-info {
-    padding: 24px 18px 24px 24px;
-    width: 330px;
+    padding: 4px 0 0 24px;
+    width: 260px;
   }
 
   .main-info {
@@ -47,13 +47,13 @@
   // 内容样式 通用
   section {
     &:not(:first-of-type) {
-      margin-top: 24px;
+      margin-top: 8px;
     }
 
     .section-title {
-      margin-bottom: 12px;
-      font-size: 24px;
-      line-height: 32px;
+      margin-bottom: 4px;
+      font-size: 18px;
+      line-height: 28px;
       letter-spacing: 0;
     }
 
@@ -61,7 +61,7 @@
       font-size: 18px;
       line-height: 24px;
       color: rgba(0, 0, 0, 0.85);
-      margin-bottom: 8px;
+      margin-bottom: 4px;
 
       display: flex;
       justify-content: space-between;
@@ -78,21 +78,22 @@
 
   // basic-info 内容样式
   .basic-info .avatar {
-    margin: 12px auto;
+    margin: 0 auto;
     display: block;
-    width: 84px;
-    height: 84px;
+    //background: red;
+    width: 140px !important;
+    height:210px !important;;
   }
 
   .basic-info .name {
-    margin: 8px auto 24px;
+    margin: 8px auto 4px;
     font-size: 24px;
 
     text-align: center;
   }
 
   .basic-info .profile .profile-list {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 
     > div{
       display: flex;
@@ -124,6 +125,12 @@
 
     .skill-detail-item {
       margin-top: 4px;
+      display: flex;
+      align-items: baseline;
+    }
+    .skill-detail-item-content{
+      //background: #009688;
+      font-size: 12px;
     }
   }
 
@@ -231,10 +238,5 @@
 
   .section-aboutme > div {
     margin: 6px 0;
-  }
-  .avatar {
-    //background: red;
-    width: 160px !important;
-    height:240px !important;;
   }
 }

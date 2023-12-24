@@ -159,17 +159,6 @@ export const Template4: React.FC<Props> = props => {
             )}
           </div>
         </div>
-        {/* 自我介绍 */}
-        {!!_.trim(_.join(aboutme, '')) && (
-          <section className="section section-aboutme">
-            <div className="section-title" style={{ color: theme.color }}>
-              <FormattedMessage id="自我介绍" />
-            </div>
-            {aboutme.map((d, idx) => (
-              <div key={`${idx}`}>{d}</div>
-            ))}
-          </section>
-        )}
         {/* 教育背景 */}
         {educationList?.length ? (
           <section className="section section-education">
@@ -257,7 +246,9 @@ export const Template4: React.FC<Props> = props => {
                         <CheckCircleFilled
                           style={{ color: '#ffc107', marginRight: '8px' }}
                         />
-                        {d}
+                        <div className="skill-detail-item-content">
+                          {d}
+                        </div>
                       </div>
                     ) : null
                   )}
@@ -292,6 +283,17 @@ export const Template4: React.FC<Props> = props => {
         ) : null}
       </div>
       <div className="main-info">
+        {/* 自我介绍 */}
+        {!!_.trim(_.join(aboutme, '')) && (
+          <section className="section section-aboutme">
+            <div className="section-title" style={{ color: theme.color }}>
+              <FormattedMessage id="自我介绍" />
+            </div>
+            {aboutme.map((d, idx) => (
+              <div key={`${idx}`}>{d}</div>
+            ))}
+          </section>
+        )}
         {workExpList?.length
           ? wrapper({
               id: 'work-experience',
