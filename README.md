@@ -15,7 +15,7 @@
 <td><img src="https://user-images.githubusercontent.com/15646325/147406773-d1583d83-b4ed-496a-9b7c-2fca8a5fc624.png" height="280" /></td>
 <td><img src="https://user-images.githubusercontent.com/15646325/147406862-19ac2b2a-6dcf-466f-a0dd-53fd1a6abccd.png" height="280" /></td>
 <td><img src="https://user-images.githubusercontent.com/15646325/147406903-19529fe9-9ef8-4877-8165-b2fad0e3b48a.png" height="280" /></td>
-<td><img src="./assets/template4_preview.png" height="280" /></td>
+<td><img src="./assets/template4_preview_A4.png" height="280" /></td>
 </tr>
 <tr>
 <td><a href="https://visiky.github.io/resume?user=visiky">Live Demo</a></td>
