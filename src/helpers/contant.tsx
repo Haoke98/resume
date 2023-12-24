@@ -158,9 +158,10 @@ export const CONTENT_OF_MODULE = ({ intl }) => {
         },
       },
       {
-        type: 'input',
+        type: 'textArea',
         attributeId: 'workExpYear',
         displayName: intl.formatMessage({ id: '工作经验' }),
+        cfg: { autoSize: { minRows: 4 }, showCount: true },
       },
       {
         type: 'input',
